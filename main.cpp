@@ -12,10 +12,18 @@ int main()
 	int 	   count  = 0;
 	char	   fileName[] = "persons.txt";
 
+	cout << "Welcome to my Citizen’s Database." << endl;
+
 	populatePersons(list, count, fileName);
 	printPersons(list, count);
 
 	//call your functions here to do what is required.
+	if(addPerson(list, count) == true) {
+
+		cout << "TODO:  output list" << endl;
+	} 
+
+	cout << "Thank you for using my Citizen Database!!" << endl;
 	
 	return 0;
 }
